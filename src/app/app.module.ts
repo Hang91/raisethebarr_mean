@@ -45,6 +45,8 @@ import { FaqStartComponent } from './faq/faq-start/faq-start.component';
 import { FaqListComponent } from './faq/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq/faq-list/faq-item/faq-item.component';
 import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
+import { FooterComponent } from './footer';
+import { NavMenuComponent } from './navmenu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import '../styles/styles.scss';
@@ -79,6 +81,8 @@ type StoreType = {
     FaqListComponent,
     FaqItemComponent,
     FaqDetailComponent,
+    FooterComponent,
+    NavMenuComponent,
   ],
   /**
    * Import Angular's modules.
