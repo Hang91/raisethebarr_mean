@@ -24,6 +24,7 @@ import { PostsService } from './posts/posts.service';
         <a [routerLink]="['/']" class="logotTxt">MEAN</a>
         <a class="links" [routerLink]="['/posts']">Posts</a>
         <a class="links" [routerLink]="['/react']">React</a>
+        <a class="links" [routerLink]="['/faq']">Faq</a>
         <a class="links" href="/api/graphql">GraphQL browser</a>        
       </mat-toolbar>
     </header>
