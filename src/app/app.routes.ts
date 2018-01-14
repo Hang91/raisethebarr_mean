@@ -13,13 +13,11 @@ import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
 import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
-  { path: '',      component: HomeComponent },
-  { path: 'posts', loadChildren: './posts#PostsModule' },
-  { path: 'profile', component: ProfileComponent },
-  { path: 'react', component: ReactComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'faq', component: FaqComponent, children: [
     { path: '', component: FaqStartComponent },
     { path: ':id', component: FaqDetailComponent },
   ]},
-  { path: '**',    component: NoContentComponent },
+  { path: '**',    redirectTo: 'home' },
 ];
