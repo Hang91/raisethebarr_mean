@@ -5,7 +5,6 @@ import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
 import { NoContentComponent } from './no-content';
 import { FaqComponent } from './faq';
-import { FaqComponent } from './faq/faq.component';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';
 import { FaqListComponent } from './faq/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq/faq-list/faq-item/faq-item.component';
