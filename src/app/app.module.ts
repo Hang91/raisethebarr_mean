@@ -41,6 +41,8 @@ import { ScreenComponent } from './home/screen';
 import { RequestComponent } from './home/request';
 import { BetaComponent } from './home/beta';
 import { ChatboxComponent } from './home/chatbox';
+import { CompanyComponent } from './home/company'
+import { ServiceComponent } from './home/service'
 import { ReactComponent } from './react';
 import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
@@ -87,6 +89,8 @@ type StoreType = {
     RequestComponent,
     BetaComponent,
     ChatboxComponent,
+    CompanyComponent,
+    ServiceComponent,
     ReactComponent,
     ProfileComponent,
     NoContentComponent,
