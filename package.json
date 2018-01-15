@@ -121,6 +121,7 @@
     "method-override": "^2.3.9",
     "mongoose": "^4.10.6",
     "morgan": "^1.8.2",
+    "nodemailer": "^4.4.1",
     "preboot": "^5.0.0-rc.10",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

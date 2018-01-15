@@ -7,16 +7,16 @@ export class SendEmailService {
   constructor(private http: Http) { }
 
   sendEmailForDemo(user:any) {
-    return this.http.post('/api/sendemailfordemo', user);
+    return this.http.post('/api/email/request', user);
     //console.log(user);
   }
   
   sendEmailForBeta(user:any) {
-    return this.http.post('/api/sendemailforbeta', user);
+    return this.http.post('/api/email/beta', user);
   }
 
   sendEmailForContact(user:any) {
-    return this.http.post('/api/sendemailforcontact', user);
+    return this.http.post('/api/email/contact', user);
   }
 
 }

@@ -1,7 +1,18 @@
+const nodemailer = require('nodemailer');
+
 import Email from '../models/email.model';
 
-function sendEmail(req, res, next) {
-    console.log('send email');
+
+function sendEmailRequest(req, res, next) {
+    console.log(req.body.email);
 }
 
-export default { sendEmail };
+function sendEmailBeta(req, res, next) {
+    console.log('send beta');
+}
+
+function sendEmailContact(req, res, next) {
+    console.log('send contact');
+}
+
+export default { sendEmailRequest, sendEmailBeta, sendEmailContact };

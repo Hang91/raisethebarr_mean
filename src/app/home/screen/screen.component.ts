@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   templateUrl: './screen.component.html'
 })
 export class ScreenComponent {
-    
+  hideDemo = true;
+  hideChat = true;
+  hideBeta = true;
 }

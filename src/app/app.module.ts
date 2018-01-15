@@ -37,7 +37,10 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
-import { ScreenComponent } from './home/screen'
+import { ScreenComponent } from './home/screen';
+import { RequestComponent } from './home/request';
+import { BetaComponent } from './home/beta';
+import { ChatboxComponent } from './home/chatbox';
 import { ReactComponent } from './react';
 import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
@@ -53,6 +56,9 @@ import { MapComponent } from './contact-us/map';
 import { FooterComponent } from './footer';
 import { NavMenuComponent } from './navmenu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { ChatboxService } from '../services/chatbox.service';
+import { SendEmailService } from '../services/sendemail.service';
 
 import '../styles/styles.scss';
 import '../styles/headings.css';
@@ -78,6 +84,9 @@ type StoreType = {
     AppComponent,
     HomeComponent,
     ScreenComponent,
+    RequestComponent,
+    BetaComponent,
+    ChatboxComponent,
     ReactComponent,
     ProfileComponent,
     NoContentComponent,
@@ -118,7 +127,9 @@ type StoreType = {
    */
   providers: [
     ENV_PROVIDERS,
-    APP_PROVIDERS
+    APP_PROVIDERS,
+    SendEmailService,
+    ChatboxService
   ]
 })
 export class AppModule {
