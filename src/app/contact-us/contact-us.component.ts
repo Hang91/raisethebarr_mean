@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
+import { SendEmailService } from './../../services/sendemail.service';
 
 @Component({
   selector: 'app-contact-us',
@@ -8,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class ContactUsComponent {
 
-  constructor() {}
+  constructor(private sendEmailService: SendEmailService) {}
 
   @ViewChild('f') contactForm: NgForm;
 	submitted = false;
@@ -26,7 +27,10 @@ export class ContactUsComponent {
 	    this.user.lastname = this.contactForm.value.userData.lastname;
 	    this.user.email = this.contactForm.value.userData.email;
 	    this.user.message = this.contactForm.value.userData.message;
-	    
+	    this.sendEmailService.sendEmailForContact(this.user).subscribe(
+	      (response) => console.log(response),
+	      (error) => console.log(error)
+	    );	    
 	    this.contactForm.reset();
 	}
 
