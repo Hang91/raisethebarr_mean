@@ -3,6 +3,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { ApolloModule } from 'apollo-angular';
 import { client } from '../graphql.client';
+import { CommonModule } from '@angular/common';
+
+import { AgmCoreModule } from '@agm/core'; //GoogleMap
 import {
   NgModule,
   ApplicationRef
@@ -45,6 +48,8 @@ import { FaqListComponent } from './faq/faq-list/faq-list.component';
 import { FaqItemComponent } from './faq/faq-list/faq-item/faq-item.component';
 import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
 import { AboutUsComponent } from './about-us';
+import { ContactUsComponent } from './contact-us';
+import { MapComponent } from './contact-us/map';
 import { FooterComponent } from './footer';
 import { NavMenuComponent } from './navmenu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -82,6 +87,8 @@ type StoreType = {
     FaqItemComponent,
     FaqDetailComponent,
     AboutUsComponent,
+    ContactUsComponent,
+    MapComponent,
     FooterComponent,
     NavMenuComponent,
   ],
@@ -100,6 +107,11 @@ type StoreType = {
     MatGridListModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules }),
     ApolloModule.forRoot(client),
+    CommonModule,
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyBXE7xcv4hjhyzq58-9KMLXykZhxrT0Xz8'
+    })
   ],
   /**
    * Expose our Services and Providers into Angular's dependency injection.
