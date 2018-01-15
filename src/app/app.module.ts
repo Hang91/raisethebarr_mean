@@ -38,6 +38,9 @@ import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 import { ScreenComponent } from './home/screen'
+import { CompanyComponent } from './home/company'
+import { ServiceComponent } from './home/service'
+
 import { ReactComponent } from './react';
 import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
@@ -78,6 +81,8 @@ type StoreType = {
     AppComponent,
     HomeComponent,
     ScreenComponent,
+    CompanyComponent,
+    ServiceComponent,
     ReactComponent,
     ProfileComponent,
     NoContentComponent,
