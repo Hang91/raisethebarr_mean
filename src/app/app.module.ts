@@ -39,6 +39,7 @@ import { AppState, InternalStateType } from './app.service';
 import { HomeComponent } from './home';
 import { ScreenComponent } from './home/screen'
 import { CompanyComponent } from './home/company'
+import { ServiceComponent } from './home/service'
 
 import { ReactComponent } from './react';
 import { ProfileComponent } from './profile';
@@ -81,6 +82,7 @@ type StoreType = {
     HomeComponent,
     ScreenComponent,
     CompanyComponent,
+    ServiceComponent,
     ReactComponent,
     ProfileComponent,
     NoContentComponent,
