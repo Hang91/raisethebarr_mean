@@ -1,7 +1,4 @@
 import express from 'express';
-import userRoutes from './user.route';
-import authRoutes from './auth.route';
-import postRoutes from './post.route';
 import emailRoutes from './email.route';
 import chatbotRoutes from './chatbot.route';
 

@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { ApolloModule } from 'apollo-angular';
-import { client } from '../graphql.client';
 import { CommonModule } from '@angular/common';
 
 import { AgmCoreModule } from '@agm/core'; //GoogleMap
@@ -46,9 +44,7 @@ import { ServiceComponent } from './home/service'
 import { PartnerComponent } from './home/partner'
 
 import { ReactComponent } from './react';
-import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
-import { NoContentComponent } from './no-content';
 import { FaqComponent } from './faq';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';
 import { FaqListComponent } from './faq/faq-list/faq-list.component';
@@ -95,8 +91,6 @@ type StoreType = {
     ServiceComponent,
     PartnerComponent,
     ReactComponent,
-    ProfileComponent,
-    NoContentComponent,
     FaqComponent,
     FaqStartComponent,
     FaqListComponent,
@@ -122,7 +116,6 @@ type StoreType = {
     MatListModule,
     MatGridListModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules }),
-    ApolloModule.forRoot(client),
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
