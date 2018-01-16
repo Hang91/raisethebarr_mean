@@ -24,7 +24,7 @@ export class ChatboxService {
     this.message.msg = msg;
     this.http.post('/api/chatbot', this.message).subscribe(
       (response) => {
-        // console.log(response.json());
+        //console.log(response.json());
         const botMessage = new Message(response.json().text[0], 'bot');
         this.update(botMessage);
       },
