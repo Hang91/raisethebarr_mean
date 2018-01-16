@@ -1,6 +1,5 @@
 const nodemailer = require('nodemailer');
 
-import Email from '../models/email.model';
 
 
 function sendEmailRequest(req, res, next) {

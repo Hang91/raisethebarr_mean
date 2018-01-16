@@ -16,7 +16,6 @@ export class SendEmailService {
   }
 
   sendEmailForContact(user:any) {
-    console.log('send email contact');
     return this.http.post('/api/email/contact', user);
   }
 

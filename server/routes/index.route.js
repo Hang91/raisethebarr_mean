@@ -3,23 +3,30 @@ import userRoutes from './user.route';
 import authRoutes from './auth.route';
 import postRoutes from './post.route';
 import emailRoutes from './email.route';
+import chatbotRoutes from './chatbot.route';
 
 const router = express.Router(); // eslint-disable-line new-cap
 
 /** GET /health-check - Check service health */
 router.get('/health-check', (req, res) =>
-  res.send('OK')
+  {
+    console.log('receive health-check'),
+    res.send('OK')
+  }
 );
 
 // mount user routes at /users
-router.use('/users', userRoutes);
+// router.use('/users', userRoutes);
 
 // mount auth routes at /auth
-router.use('/auth', authRoutes);
+// router.use('/auth', authRoutes);
 
-router.use('/posts', postRoutes);
+// router.use('/posts', postRoutes);
 
 //mount email routes at /email
 router.use('/email', emailRoutes);
+
+//mount chatbot routes at /chatbot
+router.use('/chatbot', chatbotRoutes);
 
 export default router;

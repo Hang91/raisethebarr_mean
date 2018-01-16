@@ -22,6 +22,7 @@ export class ChatboxComponent implements OnInit{
   sendMessage() {
     this.chat.converse(this.formValue);
     this.formValue = '';
+
     // this.scrollToBottom();
     // var element = document.getElementById("chatbox");
     // if(element != null){

@@ -1,7 +1,4 @@
 import express from 'express';
-import validate from 'express-validation';
-import expressJwt from 'express-jwt';
-import config from '../config/config';
 import emailCtrl from '../controllers/email.controller';
 
 const router = express.Router();
