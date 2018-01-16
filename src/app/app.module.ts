@@ -119,7 +119,7 @@ type StoreType = {
     CommonModule,
     FormsModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyBXE7xcv4hjhyzq58-9KMLXykZhxrT0Xz8' //google map api client key
+      apiKey: '' //google map api client key
     })
   ],
   /**
