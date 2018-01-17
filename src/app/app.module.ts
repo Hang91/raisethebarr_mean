@@ -60,7 +60,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChatboxService } from '../services/chatbox.service';
 import { SendEmailService } from '../services/sendemail.service';
 
-import '../styles/styles.scss';
+import '../styles/styles.css';
 import '../styles/headings.css';
 
 // Application wide providers
