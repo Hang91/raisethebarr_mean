@@ -17,13 +17,6 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
-import {
-  MatToolbarModule,
-  MatCardModule,
-  MatListModule,
-  MatGridListModule
-} from '@angular/material';
-import 'hammerjs';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -111,10 +104,6 @@ type StoreType = {
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatListModule,
-    MatGridListModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules }),
     CommonModule,
     FormsModule,
