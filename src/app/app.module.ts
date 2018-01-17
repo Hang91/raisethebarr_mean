@@ -43,7 +43,7 @@ import { CompanyComponent } from './home/company'
 import { ServiceComponent } from './home/service'
 import { PartnerComponent } from './home/partner'
 
-import { ReactComponent } from './react';
+// import { ReactComponent } from './react';
 //import { angularProfileCard } from '../../components/main-profile/index';
 import { FaqComponent } from './faq';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';
@@ -90,7 +90,7 @@ type StoreType = {
     CompanyComponent,
     ServiceComponent,
     PartnerComponent,
-    ReactComponent,
+    // ReactComponent,
     FaqComponent,
     FaqStartComponent,
     FaqListComponent,

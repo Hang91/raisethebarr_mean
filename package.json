@@ -114,8 +114,6 @@
     "morgan": "^1.9.0",
     "nodemailer": "^4.4.1",
     "preboot": "^5.1.7",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
     "reflect-metadata": "^0.1.12",
     "rxjs": "~5.0.2",
     "watson-developer-cloud": "^3.0.4",
