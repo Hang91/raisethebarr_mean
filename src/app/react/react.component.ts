@@ -4,7 +4,7 @@ import HelloReact from './hello-react';
 
 @Component({
   selector: 'home',  // <home></home>
-  styleUrls: [ './react.component.scss' ],
+  styleUrls: [ './react.component.css' ],
   templateUrl: './react.component.html'
 })
 export class ReactComponent implements OnInit {

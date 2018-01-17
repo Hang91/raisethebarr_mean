@@ -5,7 +5,7 @@ import { SendEmailService } from '../../../services/sendemail.service';
 @Component({
   selector: 'home-request',
   templateUrl: './request.component.html',
-  styleUrls: ['./request.component.scss']
+  styleUrls: ['./request.component.css']
 })
 export class RequestComponent {
   constructor(private sendEmailService: SendEmailService) {}
