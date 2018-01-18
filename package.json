@@ -115,7 +115,7 @@
     "rxjs": "~5.0.2",
     "watson-developer-cloud": "^3.0.4",
     "winston": "^2.4.0",
-    "zone.js": "0.8.20"
+    "zone.js": "~0.6.1"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~4.3.0",
