@@ -1,3 +1,4 @@
+
 <div class="screen">
     <div class="container up">
   
@@ -12,27 +13,31 @@
       </div>
   
       <div class="button-row">
-        <div class="col-md-4">
-          <button class="btn btn-secondary btn-sl" (click)="hideDemo = !hideDemo; hideChat = true; hideBeta = true">Request a Demo</button>
-        </div>
-        <div class="col-md-4">
-          <button type="button" class="btn btn-secondary btn-sl" (click)="hideChat = !hideChat; hideDemo = true; hideBeta = true">Test our Chatbot</button>
-        </div>
-        <div class="col-md-4">
-          <button type="button" class="btn btn-secondary btn-sl" (click)="hideBeta = !hideBeta; hideDemo = true; hideChat = true">Join our Beta</button>
+        <div class="row">
+          <div class="col-lg-4">
+            <button type="button" class="btn btn-secondary btn-sl" (click)="hideDemo = !hideDemo; hideChat = true; hideBeta = true">Request a Demo</button>
+          </div>
+          <div class="col-lg-4">
+            <button type="button" class="btn btn-secondary btn-sl" (click)="hideChat = !hideChat; hideDemo = true; hideBeta = true">Test our Chatbot</button>
+          </div>
+          <div class="col-lg-4">
+            <button type="button" class="btn btn-secondary btn-sl" (click)="hideBeta = !hideBeta; hideDemo = true; hideChat = true">Join our Beta</button>
+          </div>
         </div>
       </div>
     </div>
     <div class="container down" [hidden]="hideDemo && hideChat && hideBeta">
       <div class="form-row">
-        <div class="col-md-4">
-          <home-request [hidden]="hideDemo"></home-request>
-        </div>
-        <div class="col-md-4">
-          <home-chatbox [hidden]="hideChat"></home-chatbox>
-        </div>
-        <div class="col-md-4">
-          <home-beta [hidden]="hideBeta"></home-beta>
+        <div class="row">
+          <div class="col-lg-4">
+            <home-request [hidden]="hideDemo"></home-request>
+          </div>
+          <div class="col-lg-4">
+            <home-chatbox [hidden]="hideChat"></home-chatbox>
+          </div>
+          <div class="col-lg-4">
+            <home-beta [hidden]="hideBeta"></home-beta>
+          </div>
         </div>
       </div>
       

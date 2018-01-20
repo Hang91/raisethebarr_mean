@@ -1,11 +1,12 @@
 .partner {
 	width: 100%;
 	background-color: pink;
-	height: 750px;
+	height: 800px;
+	padding-top: 150px; 
 }
 
 .partner h1 {
-	padding-top: 30px;
+	font-size: 28px;
 	text-align: center;
 	font-family: "Arial Black", Gadget, sans-serif;
 	color: white; 
