@@ -6,7 +6,7 @@ import 'rxjs/add/operator/scan';
 @Component({
   selector: 'home-chatbox',
   templateUrl: './chatbox.component.html',
-  styleUrls: ['./chatbox.component.scss']
+  styleUrls: ['./chatbox.component.css']
 })
 export class ChatboxComponent implements OnInit{
   @ViewChild('chatbox') private myScrollContainer: ElementRef;

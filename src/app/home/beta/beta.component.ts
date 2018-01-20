@@ -5,7 +5,7 @@ import { SendEmailService } from '../../../services/sendemail.service';
 @Component({
   selector: 'home-beta',
   templateUrl: './beta.component.html',
-  styleUrls: ['./beta.component.scss']
+  styleUrls: ['./beta.component.css']
 })
 export class BetaComponent {
   constructor(private sendEmailService: SendEmailService) {}

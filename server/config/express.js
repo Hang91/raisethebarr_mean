@@ -52,6 +52,10 @@ app.use(express.static(path.join(appRoot.path, 'dist')));
 
 app.use('/api', routes);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> upstream/master
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(appRoot.path, 'dist/index.html'));

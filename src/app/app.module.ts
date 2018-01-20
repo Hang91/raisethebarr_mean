@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-//import { ApolloModule } from 'apollo-angular';
-import { client } from '../graphql.client';
+
 import { CommonModule } from '@angular/common';
 
 import { AgmCoreModule } from '@agm/core'; //GoogleMap
@@ -19,13 +18,6 @@ import {
   RouterModule,
   PreloadAllModules
 } from '@angular/router';
-import {
-  MatToolbarModule,
-  MatCardModule,
-  MatListModule,
-  MatGridListModule
-} from '@angular/material';
-import 'hammerjs';
 
 /*
  * Platform and Environment providers/directives/pipes
@@ -45,6 +37,10 @@ import { CompanyComponent } from './home/company'
 import { ServiceComponent } from './home/service'
 import { PartnerComponent } from './home/partner'
 
+<<<<<<< HEAD
+=======
+// import { ReactComponent } from './react';
+>>>>>>> upstream/master
 //import { angularProfileCard } from '../../components/main-profile/index';
 import { FaqComponent } from './faq';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';
@@ -61,7 +57,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChatboxService } from '../services/chatbox.service';
 import { SendEmailService } from '../services/sendemail.service';
 
-import '../styles/styles.scss';
+import '../styles/styles.css';
 import '../styles/headings.css';
 
 // Application wide providers
@@ -91,6 +87,10 @@ type StoreType = {
     CompanyComponent,
     ServiceComponent,
     PartnerComponent,
+<<<<<<< HEAD
+=======
+    // ReactComponent,
+>>>>>>> upstream/master
     FaqComponent,
     FaqStartComponent,
     FaqListComponent,
@@ -111,10 +111,6 @@ type StoreType = {
     FormsModule,
     ReactiveFormsModule,
     HttpModule,
-    MatToolbarModule,
-    MatCardModule,
-    MatListModule,
-    MatGridListModule,
     RouterModule.forRoot(ROUTES, { useHash: false, preloadingStrategy: PreloadAllModules }),
     CommonModule,
     FormsModule,

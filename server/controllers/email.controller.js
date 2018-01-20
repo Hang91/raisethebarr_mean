@@ -58,8 +58,8 @@ function sendEmailBeta(req, res, next) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'infoweraisethebarr@gmail.com', // generated ethereal user
-            pass: '0115HomepageTeam' // generated ethereal password
+            user: 'sender_email', // generated ethereal user
+            pass: 'pass_word' // generated ethereal password
         }
     });
 
@@ -73,7 +73,7 @@ function sendEmailBeta(req, res, next) {
 
     let mailOption2 = {
         from: '"Raise the Barr" <infoweraisethebarr@gmail.com>', // sender address
-        to: 'jinhang91@hotmail.com', // manager address
+        to: 'manager_email', // manager address
         subject: 'Request email from user', // Subject line
         text: "A user requests a beta version of our product, user's email address is " + req.body.email + ". User name is " + req.body.firstname, // plain text body
     }
