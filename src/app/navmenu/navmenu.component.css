@@ -1,9 +1,14 @@
 img {
-    height: 150%;
+    height: 30px;
     /* padding: 1px; */
      width: auto; 
+}
+
+.navbar {
+    background-color: #4fc3f7;
 }
 
 a {
     font-size: 20px;
 }
+
