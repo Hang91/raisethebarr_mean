@@ -1,9 +1,6 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home';
-import { ReactComponent } from './react';
-import { ProfileComponent } from './profile';
 //import { angularProfileCard } from '../../components/main-profile/index';
-import { NoContentComponent } from './no-content';
 import { FaqComponent } from './faq';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';
 import { FaqListComponent } from './faq/faq-list/faq-list.component';
@@ -12,7 +9,7 @@ import { FaqDetailComponent } from './faq/faq-detail/faq-detail.component';
 import { AboutUsComponent } from './about-us';
 import { ContactUsComponent } from './contact-us';
 import { MapComponent } from './contact-us/map';
-import { DataResolver } from './app.resolver';
+//import { DataResolver } from './app.resolver';
 
 export const ROUTES: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
