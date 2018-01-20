@@ -28,8 +28,8 @@ p {
 .btn-sl {
     display: block;
     margin: 0 auto 0 auto;
-    height: 5%;
-    width: 15%;
+    height: 60px;
+    width: 180px;
 	font-size: 20px;
 	font-family: Avenir Light;
 }
@@ -37,6 +37,10 @@ p {
 .button-row {
 	margin-top: 5%;
 	margin-bottom: 5%;
+}
+
+.hidearea {
+	align-items: center;
 }
 
 
