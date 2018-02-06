@@ -1,6 +1,3 @@
-.up{
-	height: 1100px;
-}
 
 
 .down{
@@ -11,37 +8,41 @@ h1 {
 	margin-top: 40px;
 	font-size: 28px;
 	text-align: center;
-	font-family: "Arial Black", Gadget, sans-serif;
+	font-family: "Tahoma";
+	font-weight: bold;
+}
+
+img {
+	width: 100%;
+	height: auto;
 }
 
 p {
 	text-align: center;
 	padding:10px;
 	font-size: 20px;
+	font-family: Avenir Light;
 }
 
-.images {
-    display: block;
-    margin: 0 auto;
-	height: 700px;
-	width: auto;
-}
 
 .btn-sl {
     display: block;
     margin: 0 auto 0 auto;
     height: 60px;
     width: 180px;
-    font-size: 20px;
+	font-size: 20px;
+	font-family: Avenir Light;
 }
 
 .button-row {
-	margin-top: 100px;
+	margin-top: 5%;
+	margin-bottom: 5%;
 }
 
-.col-lg-4 {
+.hidearea {
 	align-items: center;
 }
+
 
 
 [hidden] {

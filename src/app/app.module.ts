@@ -36,6 +36,7 @@ import { ChatboxComponent } from './home/chatbox';
 import { CompanyComponent } from './home/company'
 import { ServiceComponent } from './home/service'
 import { PartnerComponent } from './home/partner'
+
 //import { angularProfileCard } from '../../components/main-profile/index';
 import { FaqComponent } from './faq';
 import { FaqStartComponent } from './faq/faq-start/faq-start.component';

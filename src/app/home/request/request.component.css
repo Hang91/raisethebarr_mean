@@ -7,7 +7,7 @@ input.ng-invalid.ng-touched {
 }
 
 .form-group input {
-	width: 300px;
+	width: 100%;
 }
 
 .thanks {
