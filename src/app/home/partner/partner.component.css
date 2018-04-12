@@ -12,12 +12,14 @@
 	color: white; 
 }
 
+.row {
+	align-items: center;
+}
+
 [class*="col-"] {
 	text-align: center;
 	align-items: center;
 }
-
-
 
 
 

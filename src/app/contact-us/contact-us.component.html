@@ -1,10 +1,12 @@
 <div class="container">
     <div class="contact-form">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
           <app-map></app-map>
         </div>
-        <div class="col-md-6">
+        <div class="col-lg-1 col-md-1 col-sm-1">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
           <ul class="address" style="font-size: 20px">
             <li><i class="fa fa-map-marker"></i> <span> Address:</span><br>
               <a href="https://www.google.com/maps/place/1900+Market+St,+Philadelphia,+PA+19103/@39.9531084,-75.1746308,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c636cdf64d51:0x62f348f6b80365eb!8m2!3d39.9531084!4d-75.1724421" style="color: black"> 1900 Market St, Philadelphia, PA </a><br>
@@ -15,6 +17,7 @@
               <a href="contact@weraisethebarr.com" style="color: rgb(0, 0, 0)">  contact@weraisethebarr.com</a>
             </li>
           </ul>
+            
           <div class="contact-form-user-data">
             <form (ngSubmit)="onSubmit()" #f="ngForm">
               <div id="user-data" ngModelGroup="userData" #userData="ngModelGroup">
@@ -62,7 +65,6 @@
                     required
                     message
                     #message="ngModel"></textarea>
-                  <span class="help-block" *ngIf="!email.valid && email.touched">Please input a valid email!</span>
                 </div>
               </div>
               <button class="btn btn-primary" type="submit" [disabled]="!f.valid">Submit</button>
