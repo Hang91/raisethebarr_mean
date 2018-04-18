@@ -1,7 +1,7 @@
 .partner {
 	width: 100%;
-	background-color: #1879b9;
-	/*height: 800px;*/
+	background-color: #8bc34a;
+	height: 700px;
 	padding-top: 150px; 
 }
 
@@ -24,29 +24,30 @@
 
 
 
-.partner .container .social {
-	display: flex;
+.social {
+	/* display: flex; */
 	align-content: center;
 	align-items: center;
 	text-align: center;
 	/*width: 337px; */
 	/*left: 400px; */
 	position: relative; 
-	top: 180px; height: 53px;
+	top: 50px; height: 20px;
 }
 
-.partner .container .social ul {
+.social ul {
+	align-content: center;
 	width: 250px;
 }
 
-.partner .container .social ul li {
+.social ul li {
 	/*margin-bottom: 0px; margin-right: 34px; */
 	width: 53px; height: 53px; 
 	object-fit: cover; 
 	display: inline-block;
 }
 
-.partner .container .social ul li a img {
+.social img {
 	/*margin-bottom: 0px; */
 	margin-right: 34px; 
 	width: 53px; height: 53px; 
